@@ -1,0 +1,14 @@
+.DS_Store
+**/.DS_Store
+.claude/
+
+# тяжёлые исходники — в репозиторий не нужны
+assets/screen recording/
+assets/platform1/
+/photo_*.jpg
+
+# неиспользуемые скрины отзывов
+assets/reviews/photo_*.jpg
+
+# собранная self-contained версия (2.6 МБ, генерится из index.html)
+dist/
