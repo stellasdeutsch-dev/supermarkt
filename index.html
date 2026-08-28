@@ -501,8 +501,9 @@ html.nofx .rv,html.nofx .rv-s,html.nofx .chip,html.nofx .msg,html.nofx .leg,html
   display:flex;align-items:center;gap:8px;padding:11px 16px 11px 13px;border-radius:999px;
   background:#fff;color:var(--ink);font-size:13px;font-weight:800;
   box-shadow:0 10px 30px rgba(11,11,12,.22);
-  transform:translateY(160%);transition:transform .5s var(--ease)}
-.fab.show{transform:none}
+  transform:translateY(calc(100% + 90px));opacity:0;pointer-events:none;
+  transition:transform .5s var(--ease),opacity .3s}
+.fab.show{transform:none;opacity:1;pointer-events:auto}
 .fab .ico{font-size:16px}
 .fab .nm{max-width:104px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600;color:var(--gray)}
 @media (min-width:900px){.fab{left:24px;bottom:24px}}
